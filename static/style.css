@@ -18,6 +18,7 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: sans-serif;
+    
 }
 /* Хидэр и панель навигации */
 header{
@@ -26,35 +27,42 @@ header{
     overflow: hidden;
     min-height: 100px;
     position: fixed;
+    align-items: center;
     width: 100%;
     background-color: rgba(38, 134, 130, 0.6);
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav-list{
     padding-left: 1.5rem;
     height: 100%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
 }
-
+.contact_info{
+    display: flex;
+    
+}
 /* Заглавная часть страницы */
 .Main{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     background:url(img/217374.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
 }
 
-.Main::before {
+.Main::after {
     content: '';
+    display: block;
     width: 100%;
     position: absolute;
     top: 0;
@@ -65,12 +73,18 @@ header{
     z-index: 1;
   }
 
+.Main>img{
+    width: 15rem;
+    
+    z-index: 2;
+}
+
 .main_title{
     width: 100%;
     overflow: hidden;
     font-size:3rem;
     color:white;
-    max-width: 30ch;
+    max-width: 40ch;
     line-height: 80px;
     text-align: center;
     z-index: 2;
