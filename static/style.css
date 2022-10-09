@@ -7,14 +7,40 @@ ul{
     list-style: none;
 }
 
-header{
-    display: flex;
-    min-height: 10vh;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+a{
+    text-decoration: none;
+    color: white;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: sans-serif;
+}
+/* Хидэр и панель навигации */
+header{
+    display: flex;
+    height: 10vh;
+    overflow: hidden;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(38, 134, 130, 0.6);
+    z-index: 2;
+}
+
+.nav-list{
+    padding-left: 1.5rem;
+    height: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Заглавная часть страницы */
 .Main{
     display: flex;
     align-items: center;
@@ -29,6 +55,7 @@ header{
 
 .Main::before {
     content: '';
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -39,6 +66,8 @@ header{
   }
 
 .main_title{
+    width: 100%;
+    overflow: hidden;
     font-size:3rem;
     color:white;
     max-width: 30ch;
@@ -46,3 +75,10 @@ header{
     text-align: center;
     z-index: 2;
 }
+/* Вторая часть главной страницы */
+.second-part_content{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
