@@ -214,7 +214,7 @@ li>a:hover{
 
 .list_of_service{
     display: grid;  
-    justify-items: center;
+    justify-items:center;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 15px;
     width: 800px;
