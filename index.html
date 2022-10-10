@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
     <title>Главная страница</title>
 </head>
 <body>
@@ -14,14 +15,14 @@
                 <li><a href="">Главная</a></li>
                 <li><a href="">Услуги</a></li>
                 <li><a href="">Сотрудники</a></li>
-                <li><a href="">Как с нами связаться</a></li>
+                <li><a href="#href_contacts">Как с нами связаться</a></li>
             </ul>
         </nav>
         <div class="contact_info">+7(965)364-63-35</div>
     </header>
 
-    <div class="Main">
-        <img src="static/img/icon (1).png" alt="">
+    <div id="up_main" class="Main">
+        <img  src="static/img/icon_red.png" alt="">
         <h1 class="main_title">КРУГЛОСУТОЧНАЯ АВАРИЙНАЯ СЛУЖБА "СтройТехноСфера"</h1>
         <p>Оказываем помощь в любое время суток</p>
     </div>
@@ -34,22 +35,29 @@
                     в случае аварий, необходимости в диагностике и обслуживании.
                 </p>
             </div>
-            <img src="static/img/repairicon.jpg" alt="">
+            <img src="static/img/repairicon.png" alt="">
         </div>
         <div class="our_service">
             <h1 class="second_headliner">Что мы предоставляем</h1>
             <div class="service_info_block">
                 <img src="static/img/engineering.jpg" alt="">
                 <div class="list_of_service">
-                    <p>Инженерное обслуживание</p>
-                    <p>Инженерное обслуживание</p>
-                    <p>Инженерное обслуживание</p>
-                    <p>Инженерное обслуживание</p>
-                    <p>Инженерное обслуживание</p>
+                    <p><i class="fa fa-wrench" id="engineering_icon" aria-hidden="true"></i>Инженерное обслуживание</p>
+                    <p><i class="fa fa-phone" id="engineering_icon" aria-hidden="true"></i>Круглосуточный диспетчер</p>
+                    <p><i class="fa fa-envelope-o" aria-hidden="true" id="engineering_icon"></i>Удобные способы связи</p>
+                    <p><i class="fa fa-id-badge" aria-hidden="true" id="engineering_icon"></i></i>Квалифицированные сотрудники</p>
+                    <p><i class="fa fa-wrench" id="engineering_icon" aria-hidden="true"></i>Инженерное обслуживание</p>
                 </div>
             </div>
         </div>
+        <div class="our_contacts">
+            <h1 class="second_headliner" id="href_contacts">Как с нами связаться</h1>
+            <p>Контактный телефон: <b>+7(965)364-63-35</b></p>
+            <p>Электронная почта: <b>obrazec@mail.ru</b></p>
+            <a href="#up_main" id="arrow_up"><i class="fa fa-arrow-circle-up" aria-hidden="true" ></i></a>
+        </div>
+        <footer>© КРУГЛОСУТОЧНАЯ АВАРИЙНАЯ СЛУЖБА "СтройТехноСфера" 2022
+        </footer>
     </div>
-    <footer></footer>
 </body>
 </html>
