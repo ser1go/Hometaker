@@ -273,3 +273,163 @@ footer{
     padding-bottom: 15px;
 }
 
+/* Мобильная вёрстка */
+
+
+@media (max-width:1300px){
+    nav{
+        display: none;
+    }
+    header{
+        position: absolute;
+    }
+
+    .text_part{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_part>img{
+        width: 600px; 
+        align-self: center;
+        margin-top: 3rem;
+     }
+
+     .info{
+        margin-left: 0;
+        width: 100%;
+     }
+     .info>p{
+        margin-top: 3rem;
+        width: 700px;
+        align-self: center;
+        text-align: justify;
+     }
+    
+     .second_headliner{
+        margin-top: 15rem;
+     }
+
+     .service_info_block{
+        margin-top: 5rem;
+        flex-direction: column;
+     }
+
+     .service_info_block>img{
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .list_of_service{
+        align-self: center;
+        margin-top: 5rem;
+        width: 70%;
+        gap: 20px;
+    }
+
+    .our_contacts{
+        margin-top: 15rem;
+    }
+}
+
+@media (max-width:930px){
+    .our_contacts{
+        margin-top: 25rem;
+    }
+}
+
+@media (max-width:800){
+    .our_contacts{
+        margin-top: 0;
+    }
+}
+
+@media (max-device-width:600px){
+    nav{
+        display: none;
+    }
+    header{
+        position: absolute;
+    }
+
+    .text_part{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_part>img{
+        width: 100%; 
+        margin-left: 0;
+        margin-top: 3rem;
+     }
+
+     .info{
+        margin-left: 0;
+        width: 100%;
+     }
+     .info>p{
+        font-size: 1rem;
+        width: 90%;
+     }
+    
+     .info>h1{
+        font-size: 1.5rem;
+     }
+
+     .second-part_content>h1{
+        font-size: 2rem;
+     }
+
+     .second_headliner{
+        margin-top: 15rem;
+        font-size: 2rem;
+     }
+
+     .service_info_block{
+        margin-top: 5rem;
+        flex-direction: column;
+     }
+
+     .service_info_block>img{
+        align-self: center;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .list_of_service{
+        align-self: center;
+        margin-top: 5rem;
+        width: 70%;
+        gap: 20px;
+    }
+
+    .our_contacts{
+        margin-top: 45rem;
+    }
+
+   .our_contacts>p{
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+   }
+
+    .main_title{
+        font-size:1.5rem;
+        color:white;
+        width: 100%;
+        max-width: 60ch;
+        line-height: 40px;
+    }
+    .Main>p{
+        width: 80%;
+        color: white;
+        z-index: 2;
+        margin-top: 60px;
+        font-size: 1.2rem;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
