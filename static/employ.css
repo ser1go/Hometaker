@@ -9,6 +9,17 @@ ul{
     grid-template-columns: 200px 200px 200px ;
 }
 
+.phone{
+    display: grid;
+    align-items: center;
+    justify-items: flex-end;
+    padding-right: 30px;
+}
+
+.fa-bars{
+    visibility: hidden;
+}
+
 /* Настройка разметки страницы на Grid */
 body{
     display: grid;
@@ -28,7 +39,7 @@ nav{
     grid-template-columns: 1fr 1fr;
     color: white;
     font-size: 1.2rem;
-    background-color: blueviolet;
+    background-color:  rgba(38, 134, 130);
     grid-area: header;
 }
 
@@ -56,4 +67,5 @@ footer{
     justify-items: center;
     background-color: white;
     grid-area: footer;
+    text-align: center;
 }
