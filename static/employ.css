@@ -2,30 +2,58 @@ body, html{
     height: 100vh;
 }
 
+ul{
+    list-style: none;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 200px 200px 200px ;
+}
+
+/* Настройка разметки страницы на Grid */
 body{
     display: grid;
     overflow-x: hidden;
-    
+    font-family: sans-serif;
     margin: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% auto 10%;
+    grid-template-rows: minmax(100px, 10%) auto minmax(50px, 5%);
     grid-template-areas: 
         "header"
         "content"
         "footer";
 }
-
+/* Настройка верхней панели навигации */
 nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-size: 1.2rem;
     background-color: blueviolet;
     grid-area: header;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    transition: 0.2s;
+}
+
+/* Основной блок */
 main{
     background-color: blue;
     grid-area: content;
 }
-
+/* Подвал сайта */
 footer{
-    background-color: aqua;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
     grid-area: footer;
 }
