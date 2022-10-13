@@ -1,6 +1,6 @@
 // Кнопка мобильного меню
 
 
-    document.getElementById('menu_button').onclick = () =>{
-        document.querySelector('#mob_m').classList.toggle('menu-show');
+    document.getElementById('menu_button').onclick =() => {
+        document.getElementById('mob_m').classList.toggle('show-menu');
     }

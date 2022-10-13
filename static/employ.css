@@ -2,7 +2,7 @@ body, html{
     height: 100vh;
 }
 
-ul{
+.nav_ul{
     list-style: none;
     display: grid;
     align-items: center;
@@ -12,7 +12,8 @@ ul{
 .phone{
     display: grid;
     align-items: center;
-    justify-items: flex-end;
+    justify-content: end;
+    grid-template-columns: max-content max-content;
     padding-right: 30px;
 }
 
@@ -27,7 +28,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(100px, 10%) auto minmax(50px, 5%);
+    grid-template-rows: minmax(100px, 10%) auto minmax(60px, 5%);
     grid-template-areas: 
         "header"
         "content"
@@ -43,6 +44,21 @@ nav{
     grid-area: header;
 }
 
+.mobile_menu{
+    display: none;
+    box-sizing: border-box;
+    border-top: 0.1px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(38, 134, 130);
+    height: 500px;
+}
+
+.show-menu{
+    display: grid;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -55,11 +71,74 @@ a:hover{
     transition: 0.2s;
 }
 
+.clicked{
+    color: black;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
 /* Основной блок */
 main{
-    background-color: blue;
-    grid-area: content;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.employees{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee_block>h1{
+    margin-bottom: 0;
+    
+}
+
+hr{
+    width: 70px;
+}
+
+.employee_block>p{
+    font-size: 1.1rem;
+}
+
+.employee_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(38, 134, 130);
+    color: white;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 350px;
+    border-radius: 12px;
+}
+
+main>h1{
+    color: rgba(38, 134, 130);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 70%;
+    height: 200px;
+}
+
 /* Подвал сайта */
 footer{
     display: grid;
@@ -69,3 +148,42 @@ footer{
     grid-area: footer;
     text-align: center;
 }
+
+/* Мобильная вёрстка */
+
+
+@media (max-width:1300px){
+    .nav_ul{
+        display: none;
+    }
+
+    .phone>p{
+        visibility: hidden;
+    }
+    
+    .fa-bars{
+        visibility: visible;
+    }
+
+    nav{
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+    }
+
+    .mobile_menu{
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile_menu>ul{
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 1.3rem;
+        gap: 50px;
+    }
+
+}
+
