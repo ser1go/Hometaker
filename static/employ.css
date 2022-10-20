@@ -149,6 +149,107 @@ footer{
     text-align: center;
 }
 
+
+/* СТИЛИ СТРАНИЦЫ УСЛУГ */
+
+.list_of_service{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block_of_service{
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    border: 2px solid rgba(38, 134, 130);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.block_of_service::before{
+    content: "";
+    display: block;
+    width: 500px;
+    box-sizing: border-box;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: -1;
+}
+
+.block_of_service:hover{
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.block_of_service>p{
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.block1{
+    background: url(img/tepl_p.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.block2{
+    background: url(img/sist_aut.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.block3{
+    background: url(img/roof_repair.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.block4{
+    background: url(img/water.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.block5{
+    background: url(img/uzel.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.our_contacts{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+.our_contacts>h1{
+    color: rgba(38, 134, 130);
+    font-size: 2rem;
+}
+.our_contacts>p{
+    font-size: 1.3rem;
+}
+/* КОНЕЦ СТИЛЕЙ СТРАНИЦЫ УСЛУГ */
+
+
 /* Мобильная вёрстка */
 
 
@@ -182,8 +283,17 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
         font-size: 1.3rem;
-        gap: 50px;
+        gap: 400px;
     }
 
+    .block_of_service{
+        width: 350px;
+    }
+    .block_of_service::before{
+        width: 350px;
+    }
+    .our_contacts>p{
+        font-size: 1.1rem;
+    }
 }
 

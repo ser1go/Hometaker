@@ -307,6 +307,7 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 /* Мобильная вёрстка */
@@ -323,6 +324,7 @@ footer{
 
     .contact_info{
         font-size: 2.5rem;
+        align-items: center;
     }
 
     .fa-bars{
@@ -386,6 +388,7 @@ footer{
     .our_contacts{
         margin-top: 25rem;
     }
+    .main_title{font-size: 2rem;}
 }
 
 @media (max-width:800){
